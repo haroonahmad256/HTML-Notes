@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Videos formats which are supported: .mp4 .webm  .ogg-->
+    
+    <video  width="500" height="500" controls autoplay muted loop>
+        <source src="ImagesAudios/video.mp4" type= "video/mp4"> <!--In case our one mp4 video is not working we can add another source file-->
+        <source src="ImagesAudios/video.webm" type="video/webm"> <!--This would be played if first video file in 
+        not working during to some reasons, IT IS A BACKUP VIDEO-->
+    </video>
+    <!--We can also make hyperlink of video-->
+    <hr>
+    
+    <a href="www.google.com" target= "_blank">
+        <video src="ImagesAudios/video.mp4" width="500" height="500" controls muted autoplay loop>
+            <source src="ImagesAudios/video.mp4">
+        </video>
+    </a>
+</body>
+</html>
