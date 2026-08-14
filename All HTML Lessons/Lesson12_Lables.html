@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- action is a attribute which sends data to a file in backend (index.php) -->
+    <!-- method attribute specifies either form is GET request or POST request  
+     post is used for confidential information such as username and password
+     get is for insensitive data-->
+    <form action="index.php" method="post">
+        <label for="username">Username: </label>
+        <input type="text" placeholder="Enter  account username" id="username" minlength="4" maxlength="20" required>
+        <br>
+        <br>
+
+        <label for="password">Password: </label>
+        <input placeholder="Enter account password" type="password" minlenth="8" required>
+        <!-- for attribute of our label tag should match with id attribute of input tag -->
+
+        <br>
+        <br>
+
+        <label for="email">Email: </label>
+        <input type="email" placeholder="email@email.com" minlength="8" required> <br> <br>
+
+        <label for="tel">TelePhone: </label>
+        <input type="tel" placeholder="000-000-0000" minlength="11" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <br>
+        <br>
+
+        <label for="date">Enter Date: </label>
+        <input type="date" placeholder="Enter Date">
+
+        <br>
+        <br>
+
+        <label for="time">Time: </label>
+        <input type="time" required>
+
+        <br>
+        <br>
+        
+        <label for="">Choose File:</label>
+        <input type="file" required>
+        <br>
+        <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>

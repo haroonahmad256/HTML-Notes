@@ -1,0 +1,34 @@
+/* We can pick specific elements from html file and apply styling on it */
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+#p1{
+    color:red;
+}
+#p2{
+    color:white;
+}
+#p3{
+    color:blue;
+}
+#p4{
+    color:aquamarine;
+}
+
+/* Here we mostly used color names but we can also set colors by rgb value, hexadecimal value and hsl value of colors */
+
+/* First and thrid paragraph belong to odd class therefore they would be yellow */
+
+.odd{
+    color:#ffff00;
+}
+
+/* And second and fourth paragraphs belong to even class therefore they would be blurywood */
+.even{
+    color:burlywood;
+}
+
+/* We can use this styling to another html file */
