@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    border: 3px solid black; /* ——————— */
+}
+
+h1{
+    border:2px solid red;
+}
+
+#p1{
+    border:2px dashed red; /* - - - - */
+}
+
+#p2{
+    border:2px dotted black; /* · · · · */
+}
+
+#p3{
+    border:3px double red; /* ======= */
+}
+
+#p2{
+    border:3px none red; /* nothing */
+    
+}
+
+/* Set borders on specific sides only */
+#p4 {
+  border-top: 2px solid blue;
+  border-right: 2px solid red;
+  border-bottom: 2px solid green;
+  border-left: 4px dashed orange;
+}
+
+/* Border radius — rounded corners */
+
+div{
+    border:2px solid black;
+    border-radius: 10px;   /* slightly round */
+    border-radius: 50%;    /* full circle (if width = height) */
+}
+
+/* Padding is the space between your content and the border. It's inside the element. */
+
+#p5{
+    padding: 20px;                      /* all 4 sides = 20px */
+    padding: 10px 20px;                 /* top/bottom=10, left/right=20 */
+    padding: 12px 20px 30px 40px;       /* top right bottom left */
+
+    /* or individually */
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* Margin is the space outside the border — it pushes elements away from each other. */
+
+#p6{
+    margin: 20px;                       /* all 4 sides */
+    margin: 10px 20px;                  /* top/bottom then left/right */
+    margin: 0 auto;                     /* center element horizontally */
+  
+    /* or individually */
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    /* margin: 0 auto is a super useful trick — it centers a block element on the page. */
+}
+
+#p7 {
+  width: 300px;        /* fixed width */
+  height: 200px;       /* fixed height */
+  width: 50%;          /* 50% of parent element */
+  max-width: 600px;    /* never go wider than 600px */
+  min-height: 100px;   /* never shorter than 100px */
+}
+
+#p8{
+    box-sizing: border-box;
+    width:300px;
+    height: auto;
+    padding: 10px;
+    border:2px solid black;
+    
+      /* actual rendered width = exactly 300px */
+        /* Border boxing means width of container or any element we created 
+        would have same width which we have set like in current case we have 
+        set 300px width so here i wouldn't change but if our box sizing option
+        is set to content box then width wouldn't be the same which we given 
+        it would 300(width)+5(padding)+2(border)
+        
+        If box sizing is set to content box then width: width(we set)+padding+border
+        And it box sizing is set to border box then with: width(we set) and padding, border would be inside that same width*/
+
+}
+
+#p9{
+    box-sizing: content-box;
+    width: 1000px;
+    border: 10px solid yellow;
+    padding: 50px;
+}
+
+button{
+  border: 2px solid blue;    /* takes up space, pushes content */
+  outline: 2px solid red;    /* floats outside, no space taken */
+  outline-offset: 4px;       /* push outline further away from element */
+  /* outline doesn't take  any space in our element whether it takes place around the space
+  outside of the element 
+  outline looks like a border but it is different. It does not take up space — it draws on top of everything without affecting layout.*/
+    width: 300px;
+    margin: 50px;
+}

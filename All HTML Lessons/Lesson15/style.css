@@ -1,0 +1,27 @@
+@font-face{
+    src:url(Roboto-Italic-VariableFont_wdth,wght.ttf);
+    font-family:Roboto-Light;
+}
+
+@font-face{
+    src:url(SairaStencil-Italic-VariableFont_wdth,wght.ttf);
+    font-family: StairaStencil;
+}
+
+h1{
+    font-family: "Saira Stencil", "Roboto-Light", "Roboto";
+}
+
+p{
+    font-family:StairaStencil, "Roboto-Light","Saira Stencil","BJ Cree", 'Times New Roman', Times, serif;
+    font-size:2em;
+    /* If my web browser couldn't display Georgia then fonts i written after commas would
+    work as backup and they would be applied */
+
+    /* If font name contain spaces then we set font in double quotes or single quotes */
+    
+    /* em is percentage 1 em is normal sized text 2 em is double sized text we can use
+    both em and pixels according to our requirements */
+    font-weight:bold;
+    font-style:italic;
+}
