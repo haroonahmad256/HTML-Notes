@@ -1,0 +1,93 @@
+*{
+    background-color: rgb(177, 162, 143);
+    box-sizing:border-box;
+   
+}
+#h1{
+    width: 100%;
+    height: auto;
+    color:rgb(202, 11, 164);
+    background-image: url('Logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#p1{
+
+    background-color: red;
+    background-color: #3498db;        /* hex */
+    background-color: rgb(52,152,219); /* rgb */
+    background-color: rgba(52,152,219, 0.5); /* rgb + transparency */
+    background-color: transparent;    /* no color at all */
+
+}
+
+#p2{
+    background-image: url('https://example.com/photo.jpg');
+    /* width: 200px; */
+    background-image: url('gojo.png');
+    
+    background-size: auto;      /* original image size (default) */
+    background-size: 200px;     /* force exact size */
+    background-size: cover;     /* stretch to fill entire div, may crop */
+    background-size: contain;   /* fit whole image inside div, may leave gaps */
+    
+    background-repeat: repeat;    /* tiles the image (default) */
+    background-repeat: no-repeat; /* show image once only */
+    background-repeat: repeat-x;  /* tile only horizontally */
+    background-repeat: repeat-y;  /*tile only vertically*/
+
+    background-position: center;        /* center of div */
+    background-position: top left;      /* corner */
+    background-position: 50% 50%;       /* same as center */
+    background-position: 20px 40px;     /* exact pixel offset (vertical, horizontal)*/
+
+}
+
+#p3{
+    box-shadow: offsetX  offsetY  blur  spread  color;
+    /*  example: */
+    box-shadow: 5px      10px     10px  0px     rgba(0,0,0,0.999);
+}
+
+#p4{
+    box-shadow: 0px 0px 0px 0px black;  /* no shadow — nothing */
+    box-shadow: 5px 0px 0px 0px black;  /* shifted right */
+    box-shadow: 0px 5px 0px 0px black;  /* shifted down */
+    box-shadow: 0px 5px 10px 0px black; /* blur added — soft shadow */
+    box-shadow: 0px 5px 10px 5px black; /* spread — shadow grows bigger */
+}
+
+#p5{
+    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.8),
+              0px 0px 10px 0px rgb(26, 26, 205); /* adds blue outline ring */
+}
+
+#p6{
+    box-shadow: inset 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+#p6{
+    opacity: 0.5;
+}
+
+/* opacity affects the WHOLE element — text, children, everything */
+div { opacity: 0.5; }
+
+/* rgba only affects the background color — text stays fully visible */
+div { 
+    background-color: rgba(0,0,0,0.5); 
+}
+
+#h2{
+  text-shadow: offsetX  offsetY  blur   color;
+  text-shadow: 2px      3px      5px    rgba(2, 158, 255, 0.9);
+
+  text-shadow: 3px 3px 0px black; /* sharp dark shadow */
+
+  text-shadow: 0px 0px 10px blue; /* soft glow */
+
+  text-shadow: 1px 1px 0 red, 3px 4px  orange; /* multiple shadows stacked */
+}

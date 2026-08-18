@@ -1,0 +1,6 @@
+#gojo{
+    float:left;
+    display: flow-root; /* by doing this if our any element is overflowing the container
+                           it wouldn't overflow*/
+    margin-right:10px;
+}
