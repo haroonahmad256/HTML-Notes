@@ -1,0 +1,26 @@
+/* div, p, h1, h2, ul, li are all block by default */
+/* span, a, strong, em are inline by default */
+
+div{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: block;
+    visibility: hidden;
+}
+/* visibility property only hide the element. The space taken by element would
+be same but it wouldn't be visible */
+
+span{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+/* We can't apply width and height elements to inline elements */
+/* inline-block is also like inline and also like block. In other words we can 
+apply width and height properties to it inline-block  */
+/* if we set display to 'none' nothing would be displayed */
+
+/* so by display property we can view elements by block, inline, inline-block and also 
+can erase the element */

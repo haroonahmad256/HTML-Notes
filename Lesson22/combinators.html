@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- combinators = explains the relationship between listed
+                      selectors
+                        = descendant
+                    > = child
+                    ~ = general sibling
+                    + = adjacent sibling
+                    
+                    if we write div > p  , it means we are applying any 
+                    css property to any paragraph tag in div tag
+                    -->
+
+    <div id="container">
+        <p>This is #p1</p>
+        <p>This is #p2</p>
+        <div>
+            <p>This is #p3</p>
+        </div>
+    </div>
+
+    <p>This is #p4</p>
+    <p>This is #p5</p>
+
+    <div id="box">
+        <div id="insidebox">Hey This is Indside box</div>
+    </div>
+</body>
+</html>
