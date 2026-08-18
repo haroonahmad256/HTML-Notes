@@ -1,0 +1,64 @@
+div {
+  position: static; /* this is the default, you rarely write it */
+}
+
+#h1{
+    position: fixed;
+    top: 0;      /* always at top of screen */
+    left: 0;
+    width: 100%; /* full width */
+    /* Every sticky navigation bar you see on a website uses position: fixed.*/
+}
+
+.section-header {
+  position: sticky; 
+  top: 0; /* sticks at the top of the viewport when reached */
+}
+
+div {
+  position: relative;
+  top: 40px;   /* moves DOWN 20px from where it was */
+  left: 40px;  /* moves RIGHT 30px from where it was */
+  background-color: aliceblue;
+  
+}
+
+/* parent */
+.container {
+  position: relative;  /* this makes it the anchor */
+  width: 400px;
+  height: 400px;
+}
+
+/* child */
+.box {
+  position: absolute;
+  top: 20px;   /* 10px from top of .container */
+  right: 30px; /* 10px from right of .container */
+}
+
+.navbar {
+  position: fixed; /* in this element always get attached with web browser and also remain as we scroll*/
+  top: 0;      /* always at top of screen */
+  left: 0;
+  width: 100%; /* full width */
+}
+
+
+/* When elements overlap each other (using position), 
+z-index controls which one appears on top. Higher number = on top.*/
+
+.box1 {
+  position: absolute;
+  z-index: 1;   /* behind */
+}
+
+.box2 {
+  position: absolute;
+  z-index: 10;  /* on top */
+}
+
+.box3 {
+  position: absolute;
+  z-index: 999; /* highest — used for modals, ads and popups */
+}

@@ -1,0 +1,47 @@
+#container{
+    border:2px solid black;
+}
+
+#container p{ /*This is descendent combinator(space after parent element and then child element)*/
+    background-color: yellow;
+}
+
+#container > p{ /*p1 and p2 are direct child of container id element while think p3 as a grandchild not child
+    p3 is descendent but not child it means all descendent are not child but all child are descendent*/
+    color: red;
+}
+
+/* p4 and p5 are siblings of p1, p2 and p3
+but if we enclose p4 and p5 with div tag then they wouldn't be siblings */
+#container ~ p{
+    color:rgb(44, 17, 196);
+}
+
+/* This selects only next direct siblings */
+#container + p{
+    background-color: aliceblue;
+}
+
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    position: relative;
+    left:200px;
+
+}
+#insidebox{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(222, 143, 40);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    top:50px;
+    left: 50px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    outline: none;
+}
