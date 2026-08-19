@@ -1,0 +1,31 @@
+.icons{
+    text-align: center;
+}
+icons a{
+    text-decoration: none;
+    margin-right: 50px;
+}
+.fa-solid.fa-house.fa-5x{
+    color:hsl(0, 0%, 59%);
+}
+.fa-solid.fa-house.fa-5x:hover{
+    color:hsl(0, 0%, 69%);
+}
+.fa-brands.fa-google.fa-5x{
+    color:hsl(0, 18%, 66%);
+}
+.fa-brands.fa-google.fa-5x:hover{
+    color:hsl(0, 18%, 76%);
+}
+.fa-brands.fa-apple.fa-5x{
+    color:hsl(38, 7%, 58%);
+}
+.fa-brands.fa-apple.fa-5x:hover{
+    color:hsl(38, 7%, 68%);
+}
+.fa-brands.fa-facebook.fa-5x{
+    color:hsl(240, 100%, 50%);
+}
+.fa-brands.fa-facebook.fa-5x:hover{
+    color:hsl(240, 100%, 70%);
+}
