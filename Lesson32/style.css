@@ -1,0 +1,51 @@
+body{
+    margin:0;
+}
+.container{
+    width: 150px;
+    border:5px solid black;
+    font-size: 8em;
+    background-color: rgb(131, 131, 131);
+    text-align: center;
+
+    transform: translateX(50px);
+    
+    transform:rotate(180deg); /*This rotates an element */
+    
+    transform:ScaleX(2); /*This scales an elements on x-axis */
+    
+    transform:skewX(45deg);
+}
+
+.hello{
+    width: 350px;
+    border:5px solid black;
+    font-size: 8em;
+    background-color: rgb(131, 131, 131);
+    text-align: center;
+    margin: 10px;
+    transform: translateX(100px) rotate(90deg) scale(0.5) skew(45deg);
+}
+
+.box{
+    transform: translateX(50px); /*Move Right*/
+    transform: translateX(-50px); /*Move Left*/
+    transform: translateY(50px); /*Move downward*/
+    transform: translateY(-50px); /*Move upward*/
+    /* instead of px we can also give a percentage */
+    transform: translateY(-50px, 50px); /*X-axis value, y-axis value*/
+    
+    
+    transform:rotateX(135deg); /*This rotates an element with respect to X-axis */
+    transform:rotateY(180deg); /*This rotates an element with respext to Y-axis*/
+    transform:rotateZ(180deg); /*This rotates an element with repect to Z-axis*/
+    
+    
+    transform:ScaleX(1); /*In other words it increase the size of element keeping the origin same on x-axis */
+    transform:ScaleY(2); /*On y-axis */
+    transform:ScaleX(0.5); /*This would compress it */
+    
+    
+    transform:skewX(45deg); /*It some kind of tilts the element*/
+    transform:skewY(45deg);
+}
